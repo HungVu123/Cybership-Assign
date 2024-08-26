@@ -4,7 +4,10 @@
     {
       "src": "src/index.ts",
       "use": "@vercel/node",
-      "config": { "includeFiles": ["dist/**"] }
+      "config": {
+        "includeFiles": ["dist/**"],
+        "installCommand": "npm install && npx prisma generate"
+      }
     }
   ],
   "routes": [
