@@ -4,7 +4,7 @@ import axios from "axios";
 
 async function getData(): Promise<Order[]> {
   try {
-    const response = await axios.get<Order[]>("http://localhost:3000/orders");
+    const response = await axios.get<Order[]>(`${process.env.API_URL}/orders`);
     return response.data;
   } catch (error) {
     console.error("Error fetching data:", error);
