@@ -1,0 +1,21 @@
+Take-Home Test: Mini Order Status Tracker
+Objective:
+Build a minimal application where users can:
+
+View a list of fulfillment orders (Order ID, Customer Name, Status).
+Requirements:
+Backend (Express.js):
+
+Create an API with two endpoints:
+GET /orders: Fetch a static list of orders, or optionally from a database if you'd like to showcase those skills (using Prisma and Postgres).
+Frontend (Next.js, React):
+
+Display the list of orders using a table.
+Tech Stack:
+TypeScript: Strongly type the code.
+React + Next.js: For the frontend UI and routing.
+Express.js or similar: For the backend API.
+(Optional): Use React Table for the list of orders.
+(Optional): Use Tailwind CSS for styling.
+(Optional): Use at least one shadcn component for the UI.
+(Optional): Use Prisma and Postgres for the list of orders, or use a static TypeScript array instead.
