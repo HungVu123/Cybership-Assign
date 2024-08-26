@@ -32,6 +32,15 @@ app.get("/orders", (req, res) => __awaiter(void 0, void 0, void 0, function* () 
         res.status(500).json({ error: "An error occurred while fetching orders." });
     }
 }));
+app.get("/", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    try {
+        res.send("Hello World!");
+    }
+    catch (error) {
+        console.error(error);
+        res.status(500).json({ error: "An error occurred while fetching orders." });
+    }
+}));
 // Function to seed data
 // async function seedData() {
 //   try {
